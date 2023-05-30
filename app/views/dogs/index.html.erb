@@ -1,0 +1,21 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <h1>Meet the Dogs</h1>
+    </div>
+  </div>
+  <div class="row">
+    <% @dogs.each do |dog| %>
+      <div class="col-md-4 mb-4">
+        <div class="smol-card-component">
+        <img class="smol-card-component-img-top" src="https://www.telegraph.co.uk/content/dam/news/2022/12/08/TELEMMGLPICT000221505597_trans_NvBQzQNjv4BqRo0U4xU-30oDveS4pXV-Vv4Xpit_DMGvdp2n7FDd82k.jpeg?imwidth=960" alt="dog image">
+          <div class="smol-card-component-body">
+            <%= link_to "Meet #{dog.name}", "#", class:"btn btn-info" %>
+            <p class="smol-card-component-text mt-2"><%= dog.breed %></p>
+            <p class="smol-card-component-text mt-2"><%= dog.address %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
