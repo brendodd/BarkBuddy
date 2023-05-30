@@ -1,0 +1,17 @@
+.dog-nav-links a {
+  margin-right: 8px;
+  text-decoration: none;
+
+  &:last-of-type{margin-right: 0;}
+}
+
+.dog-attribute {
+  width: 50%;
+  border-top: 1px solid black;
+  align-items: center;
+}
+
+.dog-attribute h3 {
+  width: 50%;
+  margin-bottom: 0;
+}
