@@ -77,3 +77,5 @@ group :test do
 end
 
 gem "devise"
+gem "breadcrumbs_on_rails"
+gem "geocoder"
