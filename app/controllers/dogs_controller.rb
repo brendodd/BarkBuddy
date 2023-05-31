@@ -9,5 +9,7 @@ class DogsController < ApplicationController
         lng: dog.longitude
       }
     end
+  def show
+    @dog = Dog.find(params[:id])
   end
 end

@@ -1,0 +1,41 @@
+.dog-nav-links a {
+  margin-right: 8px;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  background-color: #011D49;
+  color: #F5F5F5;
+  border-radius: 5px;
+
+  &:last-of-type{margin-right: 0;}
+}
+
+.dog-nav-links a:hover {
+  opacity: 0.8;
+}
+
+.dog-header h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.dog-photo {
+  border-radius: 5px;
+}
+
+.dog-attribute {
+  width: 50%;
+  border-top: 1px solid black;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.dog-attribute h3 {
+  width: 50%;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dog-attribute span {
+  font-size: 14px;
+}
