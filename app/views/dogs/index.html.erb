@@ -1,21 +1,29 @@
 <div class="container mt-3">
-  <div class="row">
-    <div class="col-12">
-      <h1>Meet the Dogs</h1>
+      <div class="col-12">
+        <h1>Meet the Dogs</h1>
+      </div>
+<div class="d-flex">
+  <div class="pe-4" style="width: 40%">
+    <div class="row">
     </div>
-  </div>
-  <div class="row">
-    <% @dogs.each do |dog| %>
-      <div class="col-md-4 mb-4">
-        <div class="smol-card-component">
-        <img class="smol-card-component-img-top" src="https://www.telegraph.co.uk/content/dam/news/2022/12/08/TELEMMGLPICT000221505597_trans_NvBQzQNjv4BqRo0U4xU-30oDveS4pXV-Vv4Xpit_DMGvdp2n7FDd82k.jpeg?imwidth=960" alt="dog image">
-          <div class="smol-card-component-body">
-            <%= link_to "Meet #{dog.name}", "#", class:"btn btn-info" %>
-            <p class="smol-card-component-text mt-2"><%= dog.breed %></p>
-            <p class="smol-card-component-text mt-2"><%= dog.address %></p>
+    <div class="row">
+      <% @dogs.each do |dog| %>
+        <div class="col-md-12 mb-4">
+          <div class="smol-card-component">
+          <img class="smol-card-component-img-top" src="https://source.unsplash.com/random/400x400?<%= dog.breed %>" alt="dog image">
+            <div class="smol-card-component-body">
+              <%= link_to "Meet #{dog.name}", "#", class:"btn btn-info" %>
+              <p class="smol-card-component-text mt-2"><%= dog.breed %></p>
+              <p class="smol-card-component-text mt-2"><%= dog.address %></p>
+            </div>
           </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
+    <div class= "sticky-top" style="position: sticky !important; width: 60%; height: 100vh;"
+    data-controller="map"
+    data-map-markers-value="<%= @markers.to_json %>"
+    data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+</div>
 </div>
