@@ -18,13 +18,13 @@ puts "Successfully created #{User.count} users"
 
 puts "Creating dogs... 🐕"
 
-rupert  = Dog.create!(name: "Rupert", birthday: "2022-03-12", size: "Large", breed: "Labrador Retriever", address: "Harlem", user: ben)
+rupert  = Dog.create!(name: "Rupert", birthday: "2022-03-12", size: "Large", breed: "Labrador Retriever", address: "Haarlem", user: ben)
 binny   = Dog.create!(name: "Binny", birthday: "2019-04-15", size: "Small", breed: "Bichon", address: "Amsterdam-West", user: tom)
 buddy   = Dog.create!(name: "Buddy", birthday: "2018-05-17", size: "Large", breed: "Great Dane", address: "Amsterdam-Oost", user: brendan)
 mutley  = Dog.create!(name: "Mutley", birthday: "2017-06-25", size: "Small", breed: "Alaskan Klee Kai", address: "Amsterdam-Zuid", user: beyonce)
 duke    = Dog.create!(name: "Duke", birthday: "2016-07-30", size: "Medium", breed: "Cockapoo", address: "Amsterdam-Noord", user: taylor)
 smokey  = Dog.create!(name: "Smokey", birthday: "2020-10-31", size: "Small", breed: "Pug", address: "Utrecht", user: rihanna)
-Dog.create!(name: "Snowball", birthday: "2018-09-23", size: "Large", breed: "Labrador Retriever", address: "Barcelona", user: rihanna)
+Dog.create!(name: "Snowball", birthday: "2018-09-23", size: "Large", breed: "Labrador Retriever", address: "Leiden", user: rihanna)
 Dog.create!(name: "Barca", birthday: "2015-03-19", size: "Medium", breed: "Bulldog", address: "Bos en Lommer", user: ben)
 Dog.create!(name: "Skia", birthday: "2016-07-31", size: "Small", breed: "Shih Tzu", address: "Hoorn", user: tom)
 Dog.create!(name: "Whiskey", birthday: "2022-01-06", size: "Large", breed: "Great Dane", address: "Maastricht", user: brendan)
