@@ -1,5 +1,4 @@
 class DogsController < ApplicationController
-
   def index
     @dogs = Dog.all
 
@@ -10,7 +9,7 @@ class DogsController < ApplicationController
       }
     end
   end
-  
+
   def show
     @dog = Dog.find(params[:id])
     @booking = Booking.new
