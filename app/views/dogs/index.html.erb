@@ -12,7 +12,7 @@
           <div class="smol-card-component">
           <img class="smol-card-component-img-top" src="https://source.unsplash.com/random/400x400?<%= dog.breed %>" alt="dog image">
             <div class="smol-card-component-body">
-              <%= link_to "Meet #{dog.name}", "#", class:"btn btn-info" %>
+              <%= link_to "Meet #{dog.name}", dog_path(dog), class:"btn btn-info" %>
               <p class="smol-card-component-text mt-2"><%= dog.breed %></p>
               <p class="smol-card-component-text mt-2"><%= dog.address %></p>
             </div>

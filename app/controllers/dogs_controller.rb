@@ -9,10 +9,10 @@ class DogsController < ApplicationController
         lng: dog.longitude
       }
     end
+  end
+  
   def show
     @dog = Dog.find(params[:id])
     @booking = Booking.new
   end
-
-
 end
