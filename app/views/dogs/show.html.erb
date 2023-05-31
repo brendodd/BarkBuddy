@@ -1,30 +1,30 @@
 <div class="container justify-content-center my-5" >
- <div class="row justify-content-center">
-  <div class="col-8 ">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <div class="d-flex justify-content-between align-items-center dog-header">
+        <h2><%= @dog.name %></h2>
+        <div class="d-flex justify-content-end dog-nav-links">
+          <%= link_to "Back to Gallery", "#" %>
+          <%= link_to "Previous", dog_path(@dog.previous_dog) if @dog.previous_dog %>
+          <%= link_to "Next", dog_path(@dog.next_dog) if @dog.next_dog %>
+        </div>
+      </div>
 
-  <div class="d-flex justify-content-between align-items-center dog-header">
-     <h2><%= @dog.name %></h2>
-
-     <div class="d-flex justify-content-end dog-nav-links">
-
-        <%= link_to "Back to Gallery", "#" %>
-        <%= link_to "Previous", dog_path(@dog.previous_dog) if @dog.previous_dog %>
-        <%= link_to "Next", dog_path(@dog.next_dog) if @dog.next_dog %>
-
-    </div>
-
-  </div>
-
-    <%= image_tag "dog.jpg", alt: "Dog", style: "width: 100%", class: "mb-5 mt-3 dog-photo" %>
+      <%= image_tag "dog.jpg", alt: "Dog", style: "width: 100%", class: "mb-5 mt-3 dog-photo" %>
 
       <div class="d-flex flex-wrap border-bottom border-dark">
         <div class="d-flex  dog-attribute"><h3>BIRTHDAY</h3><span><%= @dog.birthday %></span></div>
         <div class="d-flex  dog-attribute"><h3>SIZE</h3><span><%= @dog.size %></span></div>
         <div class="d-flex  dog-attribute"><h3>BREED</h3><span><%= @dog.breed %></span></div>
         <div class="d-flex  dog-attribute"><h3>ADDRESS</h3><span><%= @dog.address %></span></div>
-      <div>
-
-
- </div>
- </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <%= simple_form_for [@dog, @booking] do |f| %>
+        <%= f.input :start_date %>
+        <%= f.input :end_date %>
+        <%= f.submit "Submit booking", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
 </div>
