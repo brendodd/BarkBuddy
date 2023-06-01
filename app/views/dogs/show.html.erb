@@ -10,7 +10,7 @@
         </div>
       </div>
 
-      <%= image_tag "dog.jpg", alt: "Dog", style: "width: 100%", class: "mb-5 mt-3 dog-photo" %>
+      <%= cl_image_tag @dog.photo.key, style: "width: 100%", class: "mb-5 mt-3 dog-photo" %>
 
       <div class="d-flex flex-wrap border-bottom border-dark">
         <div class="d-flex  dog-attribute"><h3>BIRTHDAY</h3><span><%= @dog.birthday %></span></div>
