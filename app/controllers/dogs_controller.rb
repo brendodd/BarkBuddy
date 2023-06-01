@@ -2,6 +2,10 @@ class DogsController < ApplicationController
   def index
     @dogs = Dog.all
 
+    if params[:query]
+      @dogs = @dogs.where("breed ILIKE ?", "%#{params[:query]}%")
+    end
+
     @markers = @dogs.geocoded.map do |dog|
       {
         lat: dog.latitude,
