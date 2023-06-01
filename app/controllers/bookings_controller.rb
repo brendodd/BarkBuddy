@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :set_dog
+  before_action :set_dog, only: %i[create]
 
   def create
     @booking = Booking.new(booking_params)
@@ -7,6 +7,10 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.save
     redirect_to dog_path(@dog), notice: "Booking confirmed!"
+  end
+
+  def index
+    @bookings = Booking.where(user: current_user)
   end
 
   private
@@ -18,4 +22,5 @@ class BookingsController < ApplicationController
   def booking_params
     params.require(:booking).permit(:start_date, :end_date)
   end
+
 end

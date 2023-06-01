@@ -1,0 +1,23 @@
+<div class="container my-5">
+  <% @bookings.each do |booking| %>
+    <div class="row justify-content-center my-4">
+      <div class="col-6 d-flex justify-content-between align-items-center">
+        <%= image_tag "dog.jpg", alt: "Dog", style: "width: 40%", class: "dog-photo" %>
+        <div class="d-flex flex-wrap border-bottom border-dark mx-4">
+            <div class="d-flex  dog-attribute-index"><h3>name</h3><span><%= booking.dog.name %></span></div>
+            <div class="d-flex  dog-attribute-index"><h3>birthday</h3><span><%= booking.dog.birthday %></span></div>
+            <div class="d-flex  dog-attribute-index"><h3>size</h3><span><%= booking.dog.size %></span></div>
+            <div class="d-flex  dog-attribute-index"><h3>breed</h3><span><%= booking.dog.breed %></span></div>
+            <div class="d-flex  dog-attribute-index"><h3>address</h3><span><%= booking.dog.address %></span></div>
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-around align-items-center">
+          <div class="user-booking-index"><h3>status</h3><span><%= booking.status %></span></div>
+          <div class="user-booking-index"><h3>booking begin</h3><span><%= booking.start_date.strftime("%d %b %Y") %></span></div>
+          <div class="user-booking-index"><h3>booking end</h3><span><%= booking.end_date.strftime("%d %b %Y") %></span></div>
+      </div>
+    </div>
+
+  <% end %>
+
+</div>
