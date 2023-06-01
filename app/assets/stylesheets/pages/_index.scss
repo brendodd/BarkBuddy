@@ -53,3 +53,10 @@ but as a fallback you can chain `:not()` instead */
 @import "dog_show";
 
 @import "dog_bookings"
+  
+.sticky-map {
+  position: sticky;
+  top: 100px;
+}
+
+@import "dog_show"

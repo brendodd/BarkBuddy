@@ -20,6 +20,9 @@
 
 .dog-photo {
   border-radius: 5px;
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .dog-attribute {

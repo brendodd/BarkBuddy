@@ -1,3 +1,4 @@
+require "open-uri"
 puts "Clearing database... 🧹"
 
 Review.destroy_all
