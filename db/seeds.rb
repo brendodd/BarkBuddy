@@ -40,7 +40,7 @@ mutley.photo.attach(io: file, filename: "mutley.jpg", content_type: "image/jpeg"
 mutley.save
 
 duke    = Dog.new(name: "Duke", birthday: "2016-07-30", size: "Medium", breed: "Cockapoo", address: "Amsterdam-Noord", user: taylor)
-file = URI.open("https://www.thesprucepets.com/thmb/hxWjs7evF2hP1Fb1c1HAvRi_Rw0=/2765x0/filters:no_upscale():strip_icc()/chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg")
+file = URI.open("https://www.thesprucepets.com/thmb/hxWjs7evF2hP1Fb1c1HAvRi_Rw0=/2765x0/filters:no_upscale():strip_icc()/#chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg")
 duke.photo.attach(io: file, filename: "duke.jpg", content_type: "image/jpeg")
 duke.save
 
