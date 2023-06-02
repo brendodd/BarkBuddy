@@ -83,8 +83,8 @@ puts "Successfully created #{Dog.count} dogs"
 
 puts "Creating bookings... 📖"
 
-booking_ben = Booking.create!(start_date: "2023-06-12", end_date: "2023-06-19", dog: rupert, user: ben, status: "Booked")
-booking_tom = Booking.create!(start_date: "2023-05-24", end_date: "2023-05-31", dog: binny, user: tom, status: "Booked")
+booking_ben = Booking.create!(start_date: "2023-02-12", end_date: "2023-02-14", dog: rupert, user: ben, status: "Booked")
+booking_tom = Booking.create!(start_date: "2023-03-24", end_date: "2023-03-25", dog: binny, user: tom, status: "Booked")
 booking_brendan = Booking.create!(start_date: "2023-06-14", end_date: "2023-06-17", dog: buddy, user: brendan, status: "Booked")
 booking_beyonce = Booking.create!(start_date: "2023-07-12", end_date: "2023-07-26", dog: mutley, user: beyonce, status: "Booked")
 booking_taylor = Booking.create!(start_date: "2023-06-02", end_date: "2023-06-08", dog: duke, user: taylor, status: "Booked")

@@ -10,7 +10,9 @@ class BookingsController < ApplicationController
   end
 
   def index
-    @bookings = Booking.where(user: current_user)
+    @current_bookings = Booking.where(user: current_user, start_date: ..Date.today, end_date: Date.today + 1..)
+    @past_bookings = Booking.where(user: current_user, end_date: ..Date.today - 1)
+    @future_bookings = Booking.where(user: current_user, start_date: Date.today + 1..)
   end
 
   private
