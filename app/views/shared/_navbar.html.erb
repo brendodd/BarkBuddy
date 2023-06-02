@@ -15,8 +15,8 @@
       <%= text_field_tag :query,
                           params[:query],
                           class: "form-control rounded",
-                          placeholder: "Type a keyword" %>
-      <%= button_tag type: 'submit', name: "", class: "btn btn-primary" do %>
+                          placeholder: "Search buddies..." %>
+      <%= button_tag type: 'submit', name: "", class: "btn btn-secondary" do %>
         <i class="fas fa-search"></i>
       <% end %>
     <% end %>
@@ -32,7 +32,7 @@
           </li>
           <li class="nav-item dropdown">
           <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar", alt: "dropdown menu" %>
+            <%= image_tag "https://scontent-ams4-1.xx.fbcdn.net/v/t39.30808-6/289462788_7699038730138159_3212458452925632917_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=J1oHvSJQApkAX9rgfSG&_nc_ht=scontent-ams4-1.xx&oh=00_AfDjW8V3C5NHskyjaWPqFHrXxsdIuQBeVQOyjynTz3decg&oe=647F397A", class: "avatar", alt: "dropdown menu" %>
           </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Your Profile", "#", class: "dropdown-item" %>
