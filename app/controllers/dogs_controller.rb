@@ -19,6 +19,7 @@ class DogsController < ApplicationController
     @user_booking = Booking.find_by(user: current_user, dog: @dog) if current_user
     @review = Review.new
     @booking = Booking.new
+    @review = Review.new
   end
 
   def new
