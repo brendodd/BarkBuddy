@@ -19,67 +19,65 @@ puts "Successfully created #{User.count} users"
 
 puts "Creating dogs... 🐕"
 
-rupert = Dog.new(name: "Rupert", birthday: "2022-03-12", size: "Large", breed: "Labrador Retriever", address: "Haarlem", user: ben)
+rupert = Dog.new(name: "Rupert", birthday: "2022-03-12", size: "Small", breed: "Labrador Retriever Puppy", address: "Haarlem", user: ben)
 file = URI.open("https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*")
 rupert.photo.attach(io: file, filename: "rupert.jpg", content_type: "image/jpeg")
 rupert.save
 
-binny   = Dog.new(name: "Binny", birthday: "2019-04-15", size: "Small", breed: "Bichon", address: "Amsterdam-West", user: tom)
+binny = Dog.new(name: "Binny", birthday: "2019-04-15", size: "Small", breed: "Bichon", address: "Amsterdam-West", user: tom)
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bichon_Fris%C3%A9_-_studdogbichon.jpg/640px-Bichon_Fris%C3%A9_-_studdogbichon.jpg")
 binny.photo.attach(io: file, filename: "binny.jpg", content_type: "image/jpeg")
 binny.save
 
-buddy   = Dog.new(name: "Buddy", birthday: "2018-05-17", size: "Large", breed: "Great Dane", address: "Amsterdam-Oost", user: brendan)
-file = URI.open("https://hips.hearstapps.com/hmg-prod/images/small-fuffy-dog-breeds-1623362663.jpg?crop=1.00xw:0.753xh;0,0.0719xh&resize=1200:*")
+buddy = Dog.new(name: "Buddy", birthday: "2018-05-17", size: "Large", breed: "Great Dane", address: "Amsterdam-Oost", user: brendan)
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgPJKzsUityBCP9sdLYCGB4icltm5Xa7Oxg&usqp=CAU")
 buddy.photo.attach(io: file, filename: "buddy.jpg", content_type: "image/jpeg")
 buddy.save
 
-mutley  = Dog.new(name: "Mutley", birthday: "2017-06-25", size: "Small", breed: "Alaskan Klee Kai", address: "Amsterdam-Zuid", user: beyonce)
-file = URI.open("https://hips.hearstapps.com/hmg-prod/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=1.00xw:0.756xh;0,0.0756xh&resize=1200:*")
+mutley = Dog.new(name: "Mutley", birthday: "2017-06-25", size: "Small", breed: "Alaskan Klee Kai", address: "Amsterdam-Zuid", user: beyonce)
+file = URI.open("https://cdn.greenfieldpuppies.com/wp-content/uploads/2019/06/alaskan-klee-kai-puppy.jpg")
 mutley.photo.attach(io: file, filename: "mutley.jpg", content_type: "image/jpeg")
 mutley.save
 
-duke    = Dog.new(name: "Duke", birthday: "2016-07-30", size: "Medium", breed: "Cockapoo", address: "Amsterdam-Noord", user: taylor)
-file = URI.open("https://www.thesprucepets.com/thmb/hxWjs7evF2hP1Fb1c1HAvRi_Rw0=/2765x0/filters:no_upscale():strip_icc()/#chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg")
+duke = Dog.new(name: "Duke", birthday: "2016-07-30", size: "Medium", breed: "Cockapoo", address: "Amsterdam-Noord", user: taylor)
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROEG0d3Jn9eK9DikvP7t85m7P_IU7_0gsbXA&usqp=CAU")
 duke.photo.attach(io: file, filename: "duke.jpg", content_type: "image/jpeg")
 duke.save
 
-smokey  = Dog.new(name: "Smokey", birthday: "2020-10-31", size: "Small", breed: "Pug", address: "Utrecht", user: rihanna)
-file = URI.open("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg")
+smokey = Dog.new(name: "Smokey", birthday: "2020-10-31", size: "Small", breed: "Pug", address: "Utrecht", user: rihanna)
+file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMnB1ammiIHwjfBJ5O_1vH3yVd9GkiGGUHFQ&usqp=CAU")
 smokey.photo.attach(io: file, filename: "smokey.jpg", content_type: "image/jpeg")
 smokey.save
 
 snowball = Dog.new(name: "Snowball", birthday: "2018-09-23", size: "Large", breed: "Labrador Retriever", address: "Leiden", user: rihanna)
-file = URI.open("https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg?fit=728%2C524")
+file = URI.open("https://images.unsplash.com/photo-1554456854-55a089fd4cb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGFicmFkb3IlMjByZXRyaWV2ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60")
 snowball.photo.attach(io: file, filename: "snowball.jpg", content_type: "image/jpeg")
 snowball.save
 
 barca = Dog.new(name: "Barca", birthday: "2015-03-19", size: "Medium", breed: "Bulldog", address: "Bos en Lommer", user: ben)
-file = URI.open("https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg")
+file = URI.open("https://images.unsplash.com/photo-1611611158876-41699b77a059?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVsbGRvZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60")
 barca.photo.attach(io: file, filename: "barca.jpg", content_type: "image/jpeg")
 barca.save
 
 skia = Dog.new(name: "Skia", birthday: "2016-07-31", size: "Small", breed: "Shih Tzu", address: "Hoorn", user: tom)
-file = URI.open("https://media.npr.org/assets/img/2022/11/23/russian-toy-2-002--059b8a825dac13f92234d65777e6b29b0914e92f-s1100-c50.jpg")
+file = URI.open("https://images.unsplash.com/photo-1534628526458-a8de087b1123?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hpaCUyMHR6dXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60")
 skia.photo.attach(io: file, filename: "skia.jpg", content_type: "image/jpeg")
 skia.save
 
 whiskey = Dog.new(name: "Whiskey", birthday: "2022-01-06", size: "Large", breed: "Great Dane", address: "Maastricht", user: brendan)
-file = URI.open("https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/20183655/German-Pinscher-standing-near-a-lake.jpg")
+file = URI.open("https://images.unsplash.com/photo-1585435618152-abaa5bc6351b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z3JlYXQlMjBkYW5lfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60")
 whiskey.photo.attach(io: file, filename: "whiskey.jpg", content_type: "image/jpeg")
 whiskey.save
 
 cuca = Dog.new(name: "Cuca", birthday: "2018-04-25", size: "Small", breed: "Boston Terrier", address: "Haarlem", user: rihanna)
-file = URI.open("https://www.thesprucepets.com/thmb/y4YEErOurgco9QQO-zJ6Ld1yVkQ=/3000x0/filters:no_upscale():strip_icc()/english-dog-breeds-4788340-hero-14a64cf053ca40f78e5bd078b052d97f.jpg")
+file = URI.open("https://images.unsplash.com/photo-1613059217223-c48fd81dc623?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym9zdG9uJTIwdGVycmllcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60")
 cuca.photo.attach(io: file, filename: "cuca.jpg", content_type: "image/jpeg")
 cuca.save
 
 luna = Dog.new(name: "Luna", birthday: "2020-12-25", size: "Small", breed: "Dachsund", address: "Rotterdam", user: rihanna)
-file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5ElLfEoTtQIyOm38WiEMesfB6mUaP8Dl6g&usqp=CAU")
+file = URI.open("https://images.unsplash.com/photo-1641256979532-4579084556c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGFjaHN1bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60")
 luna.photo.attach(io: file, filename: "luna.jpg", content_type: "image/jpeg")
 luna.save
-
-
 
 puts "Successfully created #{Dog.count} dogs"
 

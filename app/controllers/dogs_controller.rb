@@ -16,6 +16,8 @@ class DogsController < ApplicationController
 
   def show
     @dog = Dog.find(params[:id])
+    @user_booking = Booking.find_by(user: current_user, dog: @dog) if current_user
+    @review = Review.new
     @booking = Booking.new
     @review = Review.new
   end
